@@ -14,24 +14,32 @@ Welcome to **Stash Bar**! Follow these quick steps to get Stash Bar running on y
 
 ## 🔓 Step 2: First-Time Open (macOS Security Check)
 
-Because Stash Bar is distributed directly rather than through the Mac App Store, macOS Gatekeeper may show a notice:
-> *"Stash Bar cannot be opened because the developer cannot be verified."*
+Because Stash Bar is an open-source indie app distributed outside the Mac App Store, macOS Gatekeeper may show:
+> **"StashBar" Not Opened**  
+> *Apple could not verify "StashBar" is free of malware that may harm your Mac or compromise your privacy.*  
+> `[Done]` `[Move to Bin]`
 
-Choose **Option A** or **Option B** below (you only need to do this once):
+Choose **Option A** (System Settings) or **Option B** (Terminal) — you only need to do this **once**:
 
-### Option A: The 2-Click Method (No Terminal needed)
-1. Open your **Applications** folder in Finder.
-2. **Right-click** (or `Control + Click`) on **`StashBar.app`**.
-3. Click **Open** from the menu.
-4. A prompt will appear — click **Open**.
-5. *Done! Stash Bar will now open normally with a single click in the future.*
+### Option A: macOS System Settings (Recommended, No Terminal needed)
+1. On the warning popup, click **Done** (do NOT click Move to Bin).
+2. Open **System Settings** (click  Apple menu in top-left > **System Settings**).
+3. In the sidebar, click **Privacy & Security**.
+4. Scroll down to the **Security** section.
+5. You will see a message:
+   > *"StashBar" was blocked from use because it is not from an identified developer.*
+6. Click the button: **Open Anyway**.
+7. Enter your Mac password or Touch ID when prompted, and click **Open**.
+8. *Done! Stash Bar will now open normally with a single click.*
 
-### Option B: The Terminal Command (Instant)
-If you prefer using the Terminal:
+### Option B: The Terminal Command (Instant 1-Liner)
+If you prefer Terminal, open the Terminal app and run:
 ```bash
 xattr -cr /Applications/StashBar.app
 ```
-*(This removes Apple's quarantine flag from the downloaded app).*
+*(Or if it is in your Downloads folder: `xattr -cr ~/Downloads/StashBar.app`)*
+
+This immediately clears Apple's quarantine flag and lets Stash Bar launch immediately.
 
 ---
 

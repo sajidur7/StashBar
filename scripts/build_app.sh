@@ -34,5 +34,7 @@ echo "🔏 Ad-hoc code signing StashBar.app..."
 codesign --force --deep --sign - "$APP_DIR"
 
 echo "✅ StashBar.app successfully built at: $APP_DIR"
+(cd "$DIR/build" && rm -f "$DIR/StashBar.zip" && zip -r -X -q "$DIR/StashBar.zip" StashBar.app)
+echo "📦 StashBar.zip packaged at: $DIR/StashBar.zip"
 echo "To run StashBar, execute:"
 echo "  open build/StashBar.app"
