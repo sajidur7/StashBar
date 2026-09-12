@@ -69,7 +69,7 @@ xattr -cr /Applications/StashBar.app
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/StashBar.git
+git clone https://github.com/sajidur7/StashBar.git
 cd StashBar
 
 # Run automated unit tests

@@ -6,7 +6,7 @@ Welcome to **Stash Bar**! Follow these quick steps to get Stash Bar running on y
 
 ## 📥 Step 1: Download Stash Bar
 
-1. Download **`StashBar.zip`** from the [Releases](https://github.com/) page or root of this repository.
+1. Download **`StashBar.zip`** from the [GitHub Repository](https://github.com/sajidur7/StashBar) or directly via [Direct Download Link](https://github.com/sajidur7/StashBar/raw/main/StashBar.zip).
 2. Double-click `StashBar.zip` to extract **`StashBar.app`**.
 3. Drag **`StashBar.app`** into your **`Applications`** folder.
 
